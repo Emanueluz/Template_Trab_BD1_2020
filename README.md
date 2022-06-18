@@ -28,7 +28,7 @@ Este documento contém a especificação do projeto do banco de dados "Nikaido".
     a) O sistema proposto poderá fornecer quais tipos de relatórios e informações? 
     b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
     
-> Nikaido precisa inicialmente dos seguintes relatórios: ficha, personagem, itens, mesa, jogo/campanha e 
+> Nikaido precisa inicialmente dos seguintes relatórios:
 * Relatório que descreva a ficha do personagem;
 * Relatório contendo informações adicionais do personagem, como nome e história;
 * Relatorio listando todos os itens, dano de cada um, descrição, efeitos adicionais e tipo de dano;
