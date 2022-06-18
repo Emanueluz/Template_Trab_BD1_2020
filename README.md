@@ -55,27 +55,55 @@ Este documento contém a especificação do projeto do banco de dados "Nikaido".
         Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
         e tuplas falsas (Aplicar os conceitos de normalização abordados).   
         
-![Alt text](https://github.com/discipbd1/trab01/blob/master/images/concept_sample.png?raw=true "Modelo Conceitual")
-    
-    
-        
-    
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/modeloConceitual.png?raw=true "Modelo Conceitual")
+   
 #### 5.1 Validação do Modelo Conceitual
     [Grupo01]: [Nomes dos que participaram na avaliação]
     [Grupo02]: [Nomes dos que participaram na avaliação]
 
-#### 5.2 Descrição dos dados 
-    [objeto]: [descrição do objeto]
-    
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
-
+#### 5.2 Descrição dos dados<br>
+* USUARIO: Tabela que armazena informações referentes ao cadastro de usuários
+```
+id_user: Associa identificador ao usuário;
+email: Campo que armazena o e-mail do usuário;
+senha: Campo que armazena a senha do usuário
+```
+* MESA: Tabela que armazena informações referentes à mesa
+```
+id_mesa: Associa identificador à mesa;
+mestre: Campo relativo ao criador da mesa, por consequência, o mestre da campanha;
+link: Campo de link gerado para a mesa
+```
+* JOGO: Tabela que armazena informações referentes à campanha associada a uma mesa
+```
+id_jogo: Associa identificador ao jogo/campanha;
+jogo_mestre: Campo relativo ao mestre da campanha;
+id_mesa: Campo associando a campanha a uma mesa
+```
+* PERSONAGEM: Tabela que armazena informações de um personagem associado a um usuário e campanha
+```
+id_perso: Associa identificador ao personagem;
+nome: Campo relativo ao nome do personagem;
+id_user: Campo associando o personagem a um usuário;
+id_jogo: Campo associando o personagem a uma campanha
+```
+* ITENS: Tabela que armazena informações relativas aos itens a ser carregados e utilizados pelos personagens
+```
+id_item: Associa identificador ao item;
+nome: Campo relativo ao nome do item;
+dano: Campo que armazena os pontos de dano do item;
+descricao: Campo referente à raridade do item;
+efeito: Campo referente ao efeito adicional (buff) do item;
+tipo: Campo referente ao tipo de dano do item (Cortante/Impactante/Perfurante)
+```
+* ATRIBUTO: Tabela que armazena informações referentes a atributos baseados no sistema de RPG sendo utilizado
+```
+id_atributo: Associa identificador ao atributo;
+tipo: Campo relacionado ao nome do atributo (No sistema D&D, por exemplo, há 6 atributos base:  Força, Destreza, Constituição, Inteligência, Sabedoria e Carisma)
+```
 
 ### 6	MODELO LÓGICO<br>
-        a) inclusão do esquema lógico do banco de dados
-        b) verificação de correspondencia com o modelo conceitual 
-        (não serão aceitos modelos que não estejam em conformidade)
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/modeloLogico.png?raw=true "Modelo Lógico")
 
 ### 7	MODELO FÍSICO<br>
 * Criação da tabela USUARIO
