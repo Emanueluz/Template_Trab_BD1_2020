@@ -243,6 +243,18 @@ insert into "ITENS"(id_item,nome,dano,descricao,efeito,tipo)
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
     OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
+* SELECT da tabela USUARIO
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/selectUsuario.png?raw=true "select * from USUARIO")
+* SELECT da tabela MESA
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/selectMesa.png?raw=true "select * from MESA")
+* SELECT da tabela JOGO
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/selectJogo.png?raw=true "select * from JOGO")
+* SELECT da tabela ATRIBUTO
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/selectAtributo.png?raw=true "select * from ATRIBUTO")
+* SELECT da tabela PERSONAGEM
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/selectPersonagem.png?raw=true "select * from PERSONAGEM")
+* SELECT da tabela ITENS
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/selectItens.png?raw=true "select * from ITENS")
 
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
 
