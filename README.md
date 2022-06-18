@@ -42,7 +42,7 @@ Este documento contém a especificação do projeto do banco de dados "Nikaido".
     a) Esta tabela deve conter todos os atributos do sistema e um mínimo de 10 linhas/registros de dados.
     b) Esta tabela tem a intenção de simular um relatório com todos os dados que serão armazenados 
     
-![Exemplo de Tabela de dados da Empresa Devcom](https://github.com/discipbd1/trab01/blob/master/arquivos/TabelaEmpresaDevCom_sample.xlsx?raw=true "Tabela - Empresa Devcom")
+![Exemplo de Tabela de dados do Projeto Nikaido](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/arquivos/NikaidoRPG_Dados.xlsx?raw=true "Tabela - Nikaido")
     
     
 ### 5.MODELO CONCEITUAL<br>
