@@ -79,13 +79,16 @@ Este documento contém a especificação do projeto do banco de dados "Nikaido".
 
 ### 7	MODELO FÍSICO<br>
 * Criação da tabela USUARIO
-> create table if not exists "USUARIO"(
+```
+create table if not exists "USUARIO"(
 	id_user integer not null primary key,
 	email varchar(80) not null,
 	senha varchar(30) not null
-);<br>
+);
+``` 
 * Criação da tabela MESA
-> create table if not exists "MESA"(
+```
+create table if not exists "MESA"(
 	id_mesa integer not null primary key,
 	link varchar(6) not null,
 	nome varchar(30) not null,
@@ -98,31 +101,39 @@ Este documento contém a especificação do projeto do banco de dados "Nikaido".
 	jogo_mestre integer,
 	mesa integer,
 	foreign key(mesa) references "MESA"(id_mesa)
-);<br>
+);
+```
 * Criação da tabela PERSONAGEM
-> create table if not exists "PERSONAGEM"(
+```
+create table if not exists "PERSONAGEM"(
 	id_perso integer not null primary key,
 	nome varchar(30),
 	usuario integer,
 	jogo integer,
 	foreign key(jogo) references "JOGO"(id_jogo)
-);<br>
+);
+```
 * Criação da tabela ATRIBUTO
-> create table if not exists "ATRIBUTO"(
+```
+create table if not exists "ATRIBUTO"(
 	id_atributo integer not null primary key,
 	tipo varchar(30)
-);<br>
+);
+```
 * Criação da tabela ITENS
-> create table if not exists "ITENS"(
+```
+create table if not exists "ITENS"(
 	id_item integer not null primary key,
 	nome varchar(30),
 	dano integer,
 	descricao varchar(50),
 	efeito varchar(20),
 	tipo varchar(20)
-);<br>
+);
+```
 * Criação da tabela Perso_Atr
-> create table if not exists "Perso_Atr"(
+```
+create table if not exists "Perso_Atr"(
 	id_combi integer not null primary key,
 	id_per integer not null,
 	id_atr integer not null,
@@ -130,16 +141,18 @@ Este documento contém a especificação do projeto do banco de dados "Nikaido".
 	multiplier integer,
 	foreign key(id_per) references "PERSONAGEM"(id_perso),
 	foreign key(id_atr) references "ATRIBUTO"(id_atributo)
-);<br>
+);
+```
 * Criação da tabela Itens_Perso
->create table if not exists "Itens_Perso"(
+```
+create table if not exists "Itens_Perso"(
 	id_equip integer not null primary key,
 	item integer,
 	perso integer,
 	foreign key(item) references "ITENS"(id_item),
 	foreign key(perso) references "PERSONAGEM"(id_perso)
 );
-
+```
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
         a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico
         (Drop para exclusão de tabelas + create definição de para tabelas e estruturas de dados + insert para dados a serem inseridos)
