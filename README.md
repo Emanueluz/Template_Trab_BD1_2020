@@ -154,13 +154,64 @@ create table if not exists "Itens_Perso"(
 );
 ```
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
-        a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico
-        (Drop para exclusão de tabelas + create definição de para tabelas e estruturas de dados + insert para dados a serem inseridos)
-        b) Criar um novo banco de dados para testar a restauracao 
-        (em caso de falha na restauração o grupo não pontuará neste quesito)
-        c) formato .SQL
-
-
+* Inserção de dados na tabela USUARIO
+```
+insert into "USUARIO"(id_user,email,senha)
+	values
+		(1001,'joazinho.monge@hotmail.com','1234'),
+		(1002,'bruno.almago@gmail.com','magia'),
+		(1003,'ricardinhoplayer123@hotmail.com','ricardinho123'),
+		(1004,'joanabr@gmail.com','quadrado');
+```
+* Inserção de dados na tabela MESA
+```
+insert into "MESA"(id_mesa,link,nome,mestre)
+	values
+		(456,'gfhdfh','Covil dos Lobos',1001),
+		(654,'rfaerg','Guardiões de Thanatos',1003),
+		(353,'fgjhda','Taverna dos Pecadores',1004),
+		(247,'tsarty','Guerreiros de Canaban',1002),
+		(846,'sdrotl','Defensores do MST',1001);
+```
+* Inserção de dados na tabela JOGO
+```
+insert into "JOGO"(id_jogo,jogo_mestre,mesa)
+	values
+		(111,1004,353),
+		(222,1001,846),
+		(333,1003,654),
+		(444,1002,247);
+```
+* Inserção de dados na tabela ATRIBUTO
+```
+insert into "ATRIBUTO"(id_atributo,tipo)
+	values
+		(10,'Força'),
+		(20,'Destreza'),
+		(30,'Constituição'),
+		(40,'Inteligência'),
+		(50,'Carisma'),
+		(60,'Sabedoria');
+```
+* Inserção de dados na tabela PERSONAGEM
+```
+insert into "PERSONAGEM"(id_perso,nome,usuario,jogo)
+	values
+		(1010,'Thanos',1002,111),
+		(2010,'Legolas',1003,333),
+		(1020,'Valzer',1002,333),
+		(3010,'Eldon',1001,111);
+```
+* Inserção de dados na tabela ITENS
+```
+insert into "ITENS"(id_item,nome,dano,descricao,efeito,tipo)
+	values
+		(1100,'Pedra',1,'Comum',null,'Impactante'),
+		(1200,'Faca cega',3,'Comum',null,'Cortante'),
+		(3100,'Lança dos deuses',67,'Lendário','Força dos Deuses','Perfurante'),
+		(2100,'Espada',5,'Raro','Sangramento','Cortante'),
+		(2200,'Machadão',7,'Raro','Força+1','Cortante');
+```
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
     OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
