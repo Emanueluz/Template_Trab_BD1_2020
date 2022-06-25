@@ -108,7 +108,7 @@ tipo: Campo relacionado ao nome do atributo (No sistema D&D, por exemplo, há 6 
 ### 7	MODELO FÍSICO<br>
 * Criação da tabela USUARIO
 ```
-create table if not exists "USUARIO"(
+create table if not exists USUARIO(
 	id_user integer not null primary key,
 	email varchar(80) not null,
 	senha varchar(30) not null
@@ -116,41 +116,41 @@ create table if not exists "USUARIO"(
 ``` 
 * Criação da tabela MESA
 ```
-create table if not exists "MESA"(
+create table if not exists MESA(
 	id_mesa integer not null primary key,
 	link varchar(6) not null,
 	nome varchar(30) not null,
 	mestre integer,
-	foreign key(mestre) references "USUARIO"(id_user)
+	foreign key(mestre) references USUARIO(id_user)
 );<br>       
 * Criação da tabela JOGO
-> create table if not exists "JOGO"(
+> create table if not exists JOGO(
 	id_jogo integer not null primary key,
 	jogo_mestre integer,
 	mesa integer,
-	foreign key(mesa) references "MESA"(id_mesa)
+	foreign key(mesa) references MESA(id_mesa)
 );
 ```
 * Criação da tabela PERSONAGEM
 ```
-create table if not exists "PERSONAGEM"(
+create table if not exists PERSONAGEM(
 	id_perso integer not null primary key,
 	nome varchar(30),
 	usuario integer,
 	jogo integer,
-	foreign key(jogo) references "JOGO"(id_jogo)
+	foreign key(jogo) references JOGO(id_jogo)
 );
 ```
 * Criação da tabela ATRIBUTO
 ```
-create table if not exists "ATRIBUTO"(
+create table if not exists ATRIBUTO(
 	id_atributo integer not null primary key,
 	tipo varchar(30)
 );
 ```
 * Criação da tabela ITENS
 ```
-create table if not exists "ITENS"(
+create table if not exists ITENS(
 	id_item integer not null primary key,
 	nome varchar(30),
 	dano integer,
@@ -161,30 +161,30 @@ create table if not exists "ITENS"(
 ```
 * Criação da tabela Perso_Atr
 ```
-create table if not exists "Perso_Atr"(
+create table if not exists Perso_Atr(
 	id_combi integer not null primary key,
 	id_per integer not null,
 	id_atr integer not null,
 	dice integer,
 	multiplier integer,
-	foreign key(id_per) references "PERSONAGEM"(id_perso),
-	foreign key(id_atr) references "ATRIBUTO"(id_atributo)
+	foreign key(id_per) references PERSONAGEM(id_perso),
+	foreign key(id_atr) references ATRIBUTO(id_atributo)
 );
 ```
 * Criação da tabela Itens_Perso
 ```
-create table if not exists "Itens_Perso"(
+create table if not exists Itens_Perso(
 	id_equip integer not null primary key,
 	item integer,
 	perso integer,
-	foreign key(item) references "ITENS"(id_item),
-	foreign key(perso) references "PERSONAGEM"(id_perso)
+	foreign key(item) references ITENS(id_item),
+	foreign key(perso) references PERSONAGEM(id_perso)
 );
 ```
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 * Inserção de dados na tabela USUARIO
 ```
-insert into "USUARIO"(id_user,email,senha)
+insert into USUARIO(id_user,email,senha)
 	values
 		(1001,'joazinho.monge@hotmail.com','1234'),
 		(1002,'bruno.almago@gmail.com','magia'),
@@ -193,7 +193,7 @@ insert into "USUARIO"(id_user,email,senha)
 ```
 * Inserção de dados na tabela MESA
 ```
-insert into "MESA"(id_mesa,link,nome,mestre)
+insert into MESA(id_mesa,link,nome,mestre)
 	values
 		(456,'gfhdfh','Covil dos Lobos',1001),
 		(654,'rfaerg','Guardiões de Thanatos',1003),
@@ -203,7 +203,7 @@ insert into "MESA"(id_mesa,link,nome,mestre)
 ```
 * Inserção de dados na tabela JOGO
 ```
-insert into "JOGO"(id_jogo,jogo_mestre,mesa)
+insert into JOGO(id_jogo,jogo_mestre,mesa)
 	values
 		(111,1004,353),
 		(222,1001,846),
@@ -212,7 +212,7 @@ insert into "JOGO"(id_jogo,jogo_mestre,mesa)
 ```
 * Inserção de dados na tabela ATRIBUTO
 ```
-insert into "ATRIBUTO"(id_atributo,tipo)
+insert into ATRIBUTO(id_atributo,tipo)
 	values
 		(10,'Força'),
 		(20,'Destreza'),
@@ -223,7 +223,7 @@ insert into "ATRIBUTO"(id_atributo,tipo)
 ```
 * Inserção de dados na tabela PERSONAGEM
 ```
-insert into "PERSONAGEM"(id_perso,nome,usuario,jogo)
+insert into PERSONAGEM(id_perso,nome,usuario,jogo)
 	values
 		(1010,'Thanos',1002,111),
 		(2010,'Legolas',1003,333),
@@ -232,13 +232,33 @@ insert into "PERSONAGEM"(id_perso,nome,usuario,jogo)
 ```
 * Inserção de dados na tabela ITENS
 ```
-insert into "ITENS"(id_item,nome,dano,descricao,efeito,tipo)
+insert into ITENS(id_item,nome,dano,descricao,efeito,tipo)
 	values
 		(1100,'Pedra',1,'Comum',null,'Impactante'),
 		(1200,'Faca cega',3,'Comum',null,'Cortante'),
 		(3100,'Lança dos deuses',67,'Lendário','Força dos Deuses','Perfurante'),
 		(2100,'Espada',5,'Raro','Sangramento','Cortante'),
 		(2200,'Machadão',7,'Raro','Força+1','Cortante');
+```
+* Inserção de dados na tabela Perso_Atr
+```
+insert into perso_atr(id_combi,id_per,id_atr,dice,multiplier)
+	values 
+		(101010,1010,10,15,2),
+		(202010,2010,20,16,3),
+		(301010,1010,30,14,2),
+		(403010,3010,40,16,3),
+		(501020,1020,50,11,0),
+		(601020,1020,60,11,0);
+```
+* Inserção de dados na tabela Itens_Perso
+```
+insert into itens_perso(id_equip,item,perso)
+	values
+		(20102100,2100,2010),
+		(30103100,3100,3010),
+		(10101100,1100,1010),
+		(10102200,2200,1010);
 ```
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
     OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
@@ -256,6 +276,10 @@ insert into "ITENS"(id_item,nome,dano,descricao,efeito,tipo)
 ![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/selectPersonagem.png?raw=true "select * from PERSONAGEM")
 * SELECT da tabela ITENS
 ![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/selectItens.png?raw=true "select * from ITENS")
+* SELECT da tabela Perso_Atr
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/selectPersoAtr.png?raw=true "select * from Perso_Atr")
+* SELECT da tabela Itens_Perso
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/selectItensPerso.png?raw=true "select * from Itens_Perso")
 
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
 
