@@ -55,7 +55,7 @@ Este documento contém a especificação do projeto do banco de dados "Nikaido".
         Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
         e tuplas falsas (Aplicar os conceitos de normalização abordados).   
         
-![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/modeloConceitual.png?raw=true "Modelo Conceitual")
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/modeloConceitual.jpeg "Modelo Conceitual")
    
 #### 5.1 Validação do Modelo Conceitual
     [Grupo01]: [Nomes dos que participaram na avaliação]
