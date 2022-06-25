@@ -262,7 +262,7 @@ insert into itens_perso(id_equip,item,perso)
 ```
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
     OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
-[Script SQL base do projeto](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/arquivos/NikaidoSQL.sql?raw=true "Script SQL")
+[Script SQL base do projeto](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/arquivos/NikaidoSQL.sql?raw=true "Script SQL")<br>
 [Link para o ambiente do Google Colab do projeto](https://colab.research.google.com/drive/1h9Dek4GUZFEOuALbTIVmSF-0kAyYo9-j?usp=sharing?raw=true "Google Colab Projeto Nikaido")
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 * SELECT da tabela USUARIO
