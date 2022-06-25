@@ -29,13 +29,13 @@ Este documento contém a especificação do projeto do banco de dados "Nikaido".
     b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
     
 > Nikaido precisa inicialmente dos seguintes relatórios:
-* Relatório que descreva a ficha do personagem;
-* Relatório contendo informações adicionais do personagem, como nome e história;
+* Relatório contendo informações de login dos usuários;
+* Relatório que descreva a ficha do personagem e NPC;
 * Relatorio listando todos os itens, dano de cada um, descrição, efeitos adicionais e tipo de dano;
 * Relatório que contém informações sobre a mesa;
 * Relatório contendo informações sobre a campanha inserida na mesa atual;
 
->> ##### Observações gerais: <br> a) As tabelas de informações adicionais do personagem, itens e de informações sobre a campanha estão relacionadas entre si e atreladas à mesa atual, somente a ficha base poderá ser replicada; <br>  b) As tabelas citadas anteriormente (com exceção da replicável) podem conter valores nulos.
+>> ##### Observações gerais: <br> a) As tabelas de informações adicionais do personagem, itens e de informações sobre a campanha estão relacionadas entre si e atreladas à mesa atual, somente a ficha base poderá ser replicada; <br>  b) As tabelas citadas anteriormente (com exceção da replicável) podem conter valores nulos. <br> c) Os NPC's são um tipo de personagem também, mas em uma mesa de RPG abitual esse tipo de personagem não necessariamente tem itens ou historia.
  
  
 #### 4.3 TABELA DE DADOS DO SISTEMA:
