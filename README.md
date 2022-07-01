@@ -285,37 +285,78 @@ insert into itens_perso(id_equip,item,perso)
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_2/consultaWhere1.png?raw=true "Where1")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_2/consultaWhere2.png?raw=true "Where2")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_2/consultaWhere3.png?raw=true "Where3")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_2/consultaWhere4.png?raw=true "Where4")<br>
+
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
-    a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
-    b) Criar no mínimo 3 consultas com operadores aritméticos 
-    c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
-
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_3/consultaAON1.png?raw=true "AON1")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_3/consultaAON2.png?raw=true "AON2")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_3/consultaAON3.png?raw=true "AON3")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_3/consultaAON4.png?raw=true "AON4")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_3/consultaAON5.png?raw=true "AON5")<br>
+<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_3/consultaArit1.png?raw=true "Arit1")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_3/consultaArit2.png?raw=true "Arit2")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_3/consultaArit3.png?raw=true "Arit3")<br>
+<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_3/consultaRename1.png?raw=true "Rename1")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_3/consultaRename2.png?raw=true "Rename2")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_3/consultaRename3.png?raw=true "Rename3")<br>
+<br>
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
-    a) Criar outras 5 consultas que envolvam like ou ilike
-    b) Criar uma consulta para cada tipo de função data apresentada.
-
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_4/consultaLike1.png?raw=true "Like1")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_4/consultaLike2.png?raw=true "Like2")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_4/consultaLike3.png?raw=true "Like3")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_4/consultaLike4.png?raw=true "Like4")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_4/consultaLike5.png?raw=true "Like5")<br>
+<br>
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
-    a) Criar minimo 3 de exclusão
-    b) Criar minimo 3 de atualização
-
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_5/consultaAtt1.png?raw=true "Att1")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_5/consultaAtt2.png?raw=true "Att2")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_5/consultaAtt3.png?raw=true "Att3")<br>
+<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_5/consultaDelete1.png?raw=true "Delete1")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_5/consultaDelete2.png?raw=true "Delete2")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_5/consultaDelete3.png?raw=true "Delete3")<br>
+<br>
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
-    a) Uma junção que envolva todas as tabelas possuindo no mínimo 2 registros no resultado
-    b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
-
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_6/consultaInner1.png?raw=true "Inner1")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_6/consultaInner2.png?raw=true "Inner2")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_6/consultaInner3.png?raw=true "Inner3")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_6/consultaInner4.png?raw=true "Inner4")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_6/consultaInner5.png?raw=true "Inner5")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_6/consultaInner6.png?raw=true "Inner6")<br>
+<br>
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
-    a) Criar minimo 2 envolvendo algum tipo de junção
-
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_7/consultaGroup1.png?raw=true "Group1")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_7/consultaGroup2.png?raw=true "Group2")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_7/consultaGroup3.png?raw=true "Group3")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_7/consultaGroup4.png?raw=true "Group4")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_7/consultaGroup5.png?raw=true "Group5")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_7/consultaGroup6.png?raw=true "Group6")<br>
+<br>
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
-    a) Criar minimo 1 de cada tipo
-
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_8/consultaJoin1.png?raw=true "Join1")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_8/consultaJoin2.png?raw=true "Join2")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_8/consultaJoin3.png?raw=true "Join3")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_8/consultaJoin4.png?raw=true "Join4")<br>
+<br>
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
-        a) Uma junção que envolva Self Join (caso não ocorra na base justificar e substituir por uma view)
-        b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
-
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_9/consultaView1.png?raw=true "View1")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_9/consultaView2.png?raw=true "View2")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_9/consultaView3.png?raw=true "View3")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_9/consultaView4.png?raw=true "View4")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_9/consultaView5.png?raw=true "View5")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_9/consultaView6.png?raw=true "View6")<br>
+<br>
 #### 9.10	SUBCONSULTAS (Mínimo 4)<br>
-     a) Criar minimo 1 envolvendo GROUP BY
-     b) Criar minimo 1 envolvendo algum tipo de junção
-
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_10/consultaSub1.png?raw=true "Sub1")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_10/consultaSub2.png?raw=true "Sub2")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_10/consultaSub3.png?raw=true "Sub3")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/9_10/consultaSub4.png?raw=true "Sub4")<br>
+<br>
 ># Marco de Entrega 02: Do item 9.2 até o ítem 9.10<br>
 
 ### 10 RELATÓRIOS E GRÁFICOS
