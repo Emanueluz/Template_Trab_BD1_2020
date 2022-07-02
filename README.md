@@ -359,13 +359,13 @@ insert into itens_perso(id_equip,item,perso)
 <br>
 ># Marco de Entrega 02: Do item 9.2 até o ítem 9.10<br>
 
-### 10 RELATÓRIOS E GRÁFICOS
-
-#### a) análises e resultados provenientes do banco de dados desenvolvido (usar modelo disponível)
-#### b) link com exemplo de relatórios será disponiblizado pelo professor no AVA
-#### OBS: Esta é uma atividade de grande relevância no contexto do trabalho. Mantenha o foco nos 5 principais relatórios/resultados visando obter o melhor resultado possível.
-
-    
+### 10 RELATÓRIOS E GRÁFICOS<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/10/relatorio1.png?raw=true "Relatório 1")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/10/relatorio2.png?raw=true "Relatório 2")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/10/relatorio3.png?raw=true "Relatório 3")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/10/relatorio4.png?raw=true "Relatório 4")<br>
+![Alt text](https://github.com/Emanueluz/Template_Trab_BD1_2020/blob/master/images/printConsultas/10/relatorio5.png?raw=true "Relatório 5")<br>
+<br>
 
 ### 11	AJUSTES DA DOCUMENTAÇÃO, CRIAÇÃO DOS SLIDES E VÍDEO PARA APRESENTAÇAO FINAL <br>
 
